@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Creative Vision Studio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-video"></i>
+                <span>Creative Vision Studio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="book-services.html" class="nav-link btn-primary">Book Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Ready to showcase your talent? Let's make it happen together</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="page-content">
+        <div class="container">
+            <!-- Contact Methods -->
+            <div class="services-grid" style="margin-bottom: 4rem;">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Submit Your Talent</h3>
+                    <p>Share your artistic skills with us and join our platform to reach global audiences.</p>
+                    <a href="#talent-form" class="btn btn-primary">Submit Now</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Speak directly with our team to discuss your project and get personalized guidance.</p>
+                    <div style="margin: 1rem 0; font-size: 1.2rem; color: #6c5ce7; font-weight: 600;">+1 (555) 123-4567</div>
+                    <a href="tel:+15551234567" class="btn btn-secondary">Call Now</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>Send us your questions, ideas, or project details via email for a prompt response.</p>
+                    <div style="margin: 1rem 0; font-size: 1.1rem; color: #6c5ce7; font-weight: 600;">info@creativevisionstudio.com</div>
+                    <a href="mailto:info@creativevisionstudio.com" class="btn btn-secondary">Email Us</a>
+                </div>
+            </div>
+
+            <!-- Talent Submission Form -->
+            <section id="talent-form" style="margin-bottom: 4rem;">
+                <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem; color: #333;">Submit Your Talent</h2>
+                <div class="form-container">
+                    <form id="talentForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="age">Age</label>
+                                <input type="number" id="age" name="age" min="13" max="99">
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <input type="text" id="location" name="location" placeholder="City, Country">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="talentType">Type of Talent *</label>
+                            <select id="talentType" name="talentType" required>
+                                <option value="">Select your talent type</option>
+                                <option value="singing">Singing</option>
+                                <option value="dancing">Dancing</option>
+                                <option value="music">Musical Instrument</option>
+                                <option value="acting">Acting</option>
+                                <option value="comedy">Comedy</option>
+                                <option value="magic">Magic</option>
+                                <option value="poetry">Poetry/Spoken Word</option>
+                                <option value="visual-arts">Visual Arts</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience">Experience Level *</label>
+                            <select id="experience" name="experience" required>
+                                <option value="">Select your experience level</option>
+                                <option value="beginner">Beginner (0-2 years)</option>
+                                <option value="intermediate">Intermediate (2-5 years)</option>
+                                <option value="advanced">Advanced (5-10 years)</option>
+                                <option value="professional">Professional (10+ years)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Tell Us About Your Talent *</label>
+                            <textarea id="description" name="description" placeholder="Describe your talent, what makes you unique, your goals, and why you want to work with us..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="socialMedia">Social Media Links</label>
+                            <textarea id="socialMedia" name="socialMedia" placeholder="Share your Instagram, YouTube, TikTok, or other social media links..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Upload Content Samples</label>
+                            <div class="file-upload">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Click to upload or drag and drop</p>
+                                <p style="font-size: 0.9rem; color: #666;">Videos, audio files, or images (Max 50MB each)</p>
+                                <input type="file" multiple accept="video/*,audio/*,image/*" style="display: none;">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="goals">Your Goals *</label>
+                            <textarea id="goals" name="goals" placeholder="What do you hope to achieve? Where do you see yourself in 2-3 years?" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="availability">Availability</label>
+                            <select id="availability" name="availability">
+                                <option value="">Select your availability</option>
+                                <option value="immediate">Available immediately</option>
+                                <option value="within-month">Within a month</option>
+                                <option value="flexible">Flexible schedule</option>
+                                <option value="weekends">Weekends only</option>
+                                <option value="part-time">Part-time</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Submit My Talent</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- General Contact Form -->
+            <section style="margin-bottom: 4rem;">
+                <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem; color: #333;">General Inquiry</h2>
+                <div class="form-container">
+                    <form id="contactForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="contactName">Full Name *</label>
+                                <input type="text" id="contactName" name="contactName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address *</label>
+                                <input type="email" id="contactEmail" name="contactEmail" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Send Message</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Contact Information -->
+            <section style="margin-bottom: 4rem;">
+                <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem; color: #333;">Get In Touch</h2>
+                <div class="content-grid">
+                    <div class="content-left">
+                        <div class="feature">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Our Office</h4>
+                                <p>123 Creative Avenue<br>Studio City, CA 91604<br>United States</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Support</h4>
+                                <p>General: info@creativevisionstudio.com<br>Talent: talent@creativevisionstudio.com<br>Events: events@creativevisionstudio.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <div class="image-placeholder">
+                            <i class="fas fa-building"></i>
+                            <span>Our studio location</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Take the Next Step?</h2>
+            <p>Don't wait! Your talent deserves to be seen by the world. Contact us today and let's start your journey.</p>
+            <div class="cta-buttons">
+                <a href="#talent-form" class="btn btn-primary">Submit Your Talent</a>
+                <a href="book-services.html" class="btn btn-secondary">Book Event Coverage</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-video"></i>
+                        <span>Creative Vision Studio</span>
+                    </div>
+                    <p>Empowering artists and capturing memories through professional creative services.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Talent Promotion</a></li>
+                        <li><a href="services.html">Event Coverage</a></li>
+                        <li><a href="services.html">Content Creation</a></li>
+                        <li><a href="book-services.html">Book Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div><i class="fas fa-phone"></i> +1 (555) 123-4567</div>
+                        <div><i class="fas fa-envelope"></i> info@creativevisionstudio.com</div>
+                        <div><i class="fas fa-map-marker-alt"></i> 123 Creative Ave, Studio City</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Creative Vision Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

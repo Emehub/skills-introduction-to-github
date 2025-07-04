@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Our Services - Creative Vision Studio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-video"></i>
+                <span>Creative Vision Studio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="book-services.html" class="nav-link btn-primary active">Book Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Book Our Services</h1>
+            <p>Professional event coverage and creative services booking</p>
+        </div>
+    </section>
+
+    <!-- Booking Content -->
+    <section class="page-content">
+        <div class="container">
+            <!-- Service Selection -->
+            <div class="services-grid" style="margin-bottom: 4rem;">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Wedding Coverage</h3>
+                    <p>Complete photography and videography for your special day.</p>
+                    <div style="font-size: 1.5rem; color: #6c5ce7; font-weight: 600; margin: 1rem 0;">Starting at $1,299</div>
+                    <a href="#booking-form" class="btn btn-primary" data-service="wedding">Book Wedding</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Corporate Events</h3>
+                    <p>Professional documentation for business events and meetings.</p>
+                    <div style="font-size: 1.5rem; color: #6c5ce7; font-weight: 600; margin: 1rem 0;">Starting at $899</div>
+                    <a href="#booking-form" class="btn btn-primary" data-service="corporate">Book Corporate</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Special Events</h3>
+                    <p>Coverage for birthdays, anniversaries, and celebrations.</p>
+                    <div style="font-size: 1.5rem; color: #6c5ce7; font-weight: 600; margin: 1rem 0;">Starting at $599</div>
+                    <a href="#booking-form" class="btn btn-primary" data-service="special">Book Event</a>
+                </div>
+            </div>
+
+            <!-- Booking Form -->
+            <section id="booking-form" style="margin-bottom: 4rem;">
+                <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem; color: #333;">Book Your Event Coverage</h2>
+                <div class="form-container">
+                    <form id="eventBookingForm">
+                        <!-- Personal Information -->
+                        <h3 style="color: #6c5ce7; margin-bottom: 1.5rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem;">Personal Information</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="clientFirstName">First Name *</label>
+                                <input type="text" id="clientFirstName" name="clientFirstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="clientLastName">Last Name *</label>
+                                <input type="text" id="clientLastName" name="clientLastName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="clientEmail">Email Address *</label>
+                                <input type="email" id="clientEmail" name="clientEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="clientPhone">Phone Number *</label>
+                                <input type="tel" id="clientPhone" name="clientPhone" required>
+                            </div>
+                        </div>
+
+                        <!-- Event Details -->
+                        <h3 style="color: #6c5ce7; margin: 2rem 0 1.5rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem;">Event Details</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="eventType">Event Type *</label>
+                                <select id="eventType" name="eventType" required>
+                                    <option value="">Select event type</option>
+                                    <option value="wedding">Wedding</option>
+                                    <option value="corporate">Corporate Event</option>
+                                    <option value="birthday">Birthday Party</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="graduation">Graduation</option>
+                                    <option value="baby-shower">Baby Shower</option>
+                                    <option value="conference">Conference</option>
+                                    <option value="product-launch">Product Launch</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="eventDate">Event Date *</label>
+                                <input type="date" id="eventDate" name="eventDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="eventTime">Start Time *</label>
+                                <input type="time" id="eventTime" name="eventTime" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="eventDuration">Duration (hours) *</label>
+                                <select id="eventDuration" name="eventDuration" required>
+                                    <option value="">Select duration</option>
+                                    <option value="2">2 hours</option>
+                                    <option value="4">4 hours</option>
+                                    <option value="6">6 hours</option>
+                                    <option value="8">8 hours (Full day)</option>
+                                    <option value="10">10 hours</option>
+                                    <option value="12">12 hours</option>
+                                    <option value="custom">Custom</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="eventLocation">Event Location *</label>
+                            <input type="text" id="eventLocation" name="eventLocation" placeholder="Venue name and full address" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guestCount">Expected Number of Guests</label>
+                            <select id="guestCount" name="guestCount">
+                                <option value="">Select guest count</option>
+                                <option value="1-25">1-25 guests</option>
+                                <option value="26-50">26-50 guests</option>
+                                <option value="51-100">51-100 guests</option>
+                                <option value="101-200">101-200 guests</option>
+                                <option value="201-500">201-500 guests</option>
+                                <option value="500+">500+ guests</option>
+                            </select>
+                        </div>
+
+                        <!-- Service Requirements -->
+                        <h3 style="color: #6c5ce7; margin: 2rem 0 1.5rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem;">Service Requirements</h3>
+                        <div class="form-group">
+                            <label>Services Needed *</label>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 0.5rem;">
+                                <label style="display: flex; align-items: center; font-weight: normal;">
+                                    <input type="checkbox" name="services" value="photography" style="margin-right: 0.5rem;">
+                                    Photography
+                                </label>
+                                <label style="display: flex; align-items: center; font-weight: normal;">
+                                    <input type="checkbox" name="services" value="videography" style="margin-right: 0.5rem;">
+                                    Videography
+                                </label>
+                                <label style="display: flex; align-items: center; font-weight: normal;">
+                                    <input type="checkbox" name="services" value="live-streaming" style="margin-right: 0.5rem;">
+                                    Live Streaming
+                                </label>
+                                <label style="display: flex; align-items: center; font-weight: normal;">
+                                    <input type="checkbox" name="services" value="drone" style="margin-right: 0.5rem;">
+                                    Drone Coverage
+                                </label>
+                                <label style="display: flex; align-items: center; font-weight: normal;">
+                                    <input type="checkbox" name="services" value="editing" style="margin-right: 0.5rem;">
+                                    Video Editing
+                                </label>
+                                <label style="display: flex; align-items: center; font-weight: normal;">
+                                    <input type="checkbox" name="services" value="highlights" style="margin-right: 0.5rem;">
+                                    Highlight Reel
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="packageType">Service Package</label>
+                            <select id="packageType" name="packageType">
+                                <option value="">Select package</option>
+                                <option value="basic">Basic ($599-899)</option>
+                                <option value="standard">Standard ($1,299-1,799)</option>
+                                <option value="premium">Premium ($2,999-3,999)</option>
+                                <option value="custom">Custom Quote</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range</option>
+                                <option value="under-1000">Under $1,000</option>
+                                <option value="1000-2500">$1,000 - $2,500</option>
+                                <option value="2500-5000">$2,500 - $5,000</option>
+                                <option value="5000-10000">$5,000 - $10,000</option>
+                                <option value="10000+">$10,000+</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="specialRequests">Special Requests & Details</label>
+                            <textarea id="specialRequests" name="specialRequests" placeholder="Tell us about any specific requirements, special moments to capture, style preferences, or other important details..."></textarea>
+                        </div>
+
+                        <!-- Additional Information -->
+                        <h3 style="color: #6c5ce7; margin: 2rem 0 1.5rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem;">Additional Information</h3>
+                        <div class="form-group">
+                            <label for="referralSource">How did you hear about us?</label>
+                            <select id="referralSource" name="referralSource">
+                                <option value="">Select source</option>
+                                <option value="google">Google Search</option>
+                                <option value="social-media">Social Media</option>
+                                <option value="friend">Friend/Family Referral</option>
+                                <option value="vendor">Vendor Referral</option>
+                                <option value="previous-client">Previous Client</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="additionalComments">Additional Comments</label>
+                            <textarea id="additionalComments" name="additionalComments" placeholder="Any other information you'd like to share with us..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 2rem;">Submit Booking Request</button>
+                        <p style="text-align: center; color: #666; margin-top: 1rem; font-size: 0.9rem;">
+                            * We'll contact you within 24 hours to confirm availability and provide a detailed quote.
+                        </p>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Process Information -->
+            <section style="margin-bottom: 4rem;">
+                <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem; color: #333;">How It Works</h2>
+                <div class="services-grid">
+                    <div class="about-card">
+                        <div style="font-size: 3rem; color: #6c5ce7; margin-bottom: 1rem;">1</div>
+                        <h3>Submit Request</h3>
+                        <p>Fill out our booking form with your event details and requirements.</p>
+                    </div>
+                    <div class="about-card">
+                        <div style="font-size: 3rem; color: #6c5ce7; margin-bottom: 1rem;">2</div>
+                        <h3>Consultation</h3>
+                        <p>We'll contact you to discuss details and provide a customized quote.</p>
+                    </div>
+                    <div class="about-card">
+                        <div style="font-size: 3rem; color: #6c5ce7; margin-bottom: 1rem;">3</div>
+                        <h3>Capture Your Event</h3>
+                        <p>Our professional team will document your special day with artistic excellence.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Questions About Our Services?</h2>
+            <p>Contact us directly to discuss your specific needs and get personalized recommendations.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                <a href="tel:+15551234567" class="btn btn-secondary">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-video"></i>
+                        <span>Creative Vision Studio</span>
+                    </div>
+                    <p>Empowering artists and capturing memories through professional creative services.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Talent Promotion</a></li>
+                        <li><a href="services.html">Event Coverage</a></li>
+                        <li><a href="services.html">Content Creation</a></li>
+                        <li><a href="book-services.html">Book Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div><i class="fas fa-phone"></i> +1 (555) 123-4567</div>
+                        <div><i class="fas fa-envelope"></i> info@creativevisionstudio.com</div>
+                        <div><i class="fas fa-map-marker-alt"></i> 123 Creative Ave, Studio City</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Creative Vision Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

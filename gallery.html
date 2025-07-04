@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Creative Vision Studio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-video"></i>
+                <span>Creative Vision Studio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="book-services.html" class="nav-link btn-primary">Book Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <p>Explore our portfolio of artistic collaborations and event coverage</p>
+        </div>
+    </section>
+
+    <!-- Gallery Content -->
+    <section class="page-content">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="talent">Talent Showcase</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="weddings">Weddings</button>
+                <button class="filter-btn" data-filter="corporate">Corporate</button>
+                <button class="filter-btn" data-filter="music">Music Videos</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Talent Showcase Items -->
+                <div class="gallery-item" data-category="talent">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Singer Spotlight</h4>
+                        <p>Emerging artist showcase video</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="talent">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-theater-masks"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Dance Performance</h4>
+                        <p>Contemporary dance showcase</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="talent">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-guitar"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Acoustic Sessions</h4>
+                        <p>Intimate acoustic performance</p>
+                    </div>
+                </div>
+
+                <!-- Wedding Items -->
+                <div class="gallery-item" data-category="weddings">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Garden Wedding</h4>
+                        <p>Beautiful outdoor ceremony</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="weddings">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>City Hall Wedding</h4>
+                        <p>Intimate urban ceremony</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="weddings">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-church"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Traditional Wedding</h4>
+                        <p>Classic church ceremony</p>
+                    </div>
+                </div>
+
+                <!-- Corporate Items -->
+                <div class="gallery-item" data-category="corporate">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Corporate Conference</h4>
+                        <p>Annual company meeting</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="corporate">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Product Launch</h4>
+                        <p>Tech startup product reveal</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="corporate">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Awards Ceremony</h4>
+                        <p>Annual employee recognition</p>
+                    </div>
+                </div>
+
+                <!-- Music Video Items -->
+                <div class="gallery-item" data-category="music">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Hip-Hop Music Video</h4>
+                        <p>Urban style music production</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="music">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Pop Music Video</h4>
+                        <p>Colorful pop performance</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="music">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-drum"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Rock Band Video</h4>
+                        <p>High-energy rock performance</p>
+                    </div>
+                </div>
+
+                <!-- General Event Items -->
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Birthday Celebration</h4>
+                        <p>50th birthday party coverage</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Graduation Party</h4>
+                        <p>College graduation celebration</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Anniversary Celebration</h4>
+                        <p>25th wedding anniversary</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics Section -->
+            <section style="margin-top: 4rem; padding: 3rem 0; background: #f8f9fa; border-radius: 15px;">
+                <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem; color: #333;">Our Impact</h2>
+                <div class="services-grid">
+                    <div class="about-card">
+                        <div style="font-size: 3rem; color: #6c5ce7; font-weight: 700; margin-bottom: 1rem;">500+</div>
+                        <h3>Artists Promoted</h3>
+                        <p>We've helped over 500 talented artists showcase their skills to global audiences.</p>
+                    </div>
+                    <div class="about-card">
+                        <div style="font-size: 3rem; color: #6c5ce7; font-weight: 700; margin-bottom: 1rem;">1,200+</div>
+                        <h3>Events Covered</h3>
+                        <p>From intimate gatherings to large celebrations, we've documented over 1,200 special moments.</p>
+                    </div>
+                    <div class="about-card">
+                        <div style="font-size: 3rem; color: #6c5ce7; font-weight: 700; margin-bottom: 1rem;">50M+</div>
+                        <h3>Views Generated</h3>
+                        <p>Our promotional content has generated over 50 million views across all platforms.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section style="margin-top: 4rem;">
+                <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem; color: #333;">What Our Clients Say</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div style="color: #6c5ce7; font-size: 2rem; margin-bottom: 1rem;">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p style="font-style: italic; margin-bottom: 1.5rem;">"Creative Vision Studio transformed my music career. Their promotional video helped me reach audiences I never thought possible. Professional, creative, and results-driven!"</p>
+                        <div style="display: flex; align-items: center;">
+                            <div class="image-placeholder" style="width: 60px; height: 60px; margin-right: 1rem;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <strong>Sarah Martinez</strong><br>
+                                <span style="color: #666;">Singer-Songwriter</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div style="color: #6c5ce7; font-size: 2rem; margin-bottom: 1rem;">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p style="font-style: italic; margin-bottom: 1.5rem;">"They captured our wedding day perfectly. Every emotion, every moment - it was like having our own personal film crew. The quality exceeded our expectations!"</p>
+                        <div style="display: flex; align-items: center;">
+                            <div class="image-placeholder" style="width: 60px; height: 60px; margin-right: 1rem;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <strong>Mike & Jennifer Thompson</strong><br>
+                                <span style="color: #666;">Wedding Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div style="color: #6c5ce7; font-size: 2rem; margin-bottom: 1rem;">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p style="font-style: italic; margin-bottom: 1.5rem;">"Our corporate event coverage was outstanding. They managed to capture all the key moments while being completely unobtrusive. Highly recommended!"</p>
+                        <div style="display: flex; align-items: center;">
+                            <div class="image-placeholder" style="width: 60px; height: 60px; margin-right: 1rem;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <strong>David Chen</strong><br>
+                                <span style="color: #666;">Event Coordinator</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <h2>Want to See Your Work Here?</h2>
+            <p>Join our portfolio of talented artists and memorable events. Contact us today to get started.</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Submit Your Talent</a>
+                <a href="book-services.html" class="btn btn-secondary">Book Event Coverage</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-video"></i>
+                        <span>Creative Vision Studio</span>
+                    </div>
+                    <p>Empowering artists and capturing memories through professional creative services.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Talent Promotion</a></li>
+                        <li><a href="services.html">Event Coverage</a></li>
+                        <li><a href="services.html">Content Creation</a></li>
+                        <li><a href="book-services.html">Book Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div><i class="fas fa-phone"></i> +1 (555) 123-4567</div>
+                        <div><i class="fas fa-envelope"></i> info@creativevisionstudio.com</div>
+                        <div><i class="fas fa-map-marker-alt"></i> 123 Creative Ave, Studio City</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Creative Vision Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
